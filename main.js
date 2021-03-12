@@ -12,8 +12,8 @@ const getData = () => {
 const HTMLwomen = (inventorObj => {
     return (`
         <article id="womenInventorCard">
-        <h2 class="inventor-name">Inventor: ${inventorObj.inventor}</h2>
-        <p class="inventor-Invention">Invention: ${inventorObj.invention}</p>
+        <h2 class="inventor-name">${inventorObj.inventor}</h2>
+        <p class="inventor-Invention">Invented &rArr; ${inventorObj.invention}</p>
         <a class="inventor-link" href="${inventorObj.moreDetails}">More Details about this Woman Inventor</a>
         </article>
     `) 
@@ -38,18 +38,6 @@ const showWomenInventorList = () => {
 
 showWomenInventorList();
 
-// const womanInventor = {
-//   id: 1,
-//   invention: "Circular saw",
-//   inventor: "Tabitha Babbitt",
-//   moreDetails:
-//     "https://www.usatoday.com/story/money/2019/03/16/inventions-you-have-women-inventors-thank-these-50-things/39158677/",
-//   quote: "",
-//   details: "",
-// };
-
-// console.log(HTMLwomen(womanInventor))
-// document.querySelector("#womenInventors").innerHTML = HTMLwomen(womanInventor)
 
 
 
